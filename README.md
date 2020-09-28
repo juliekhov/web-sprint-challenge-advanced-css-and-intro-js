@@ -23,9 +23,28 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+Accessibility as a web developer means that you're building a website that color-blind, blind,
+or impaired persons can easily access and view or hear your website with a screen reader or other device.
+Accessibility can be accomplished by ensuring your website is easy to view with contrasting colors and icons
+with ARIA attributes. These attributes make the page more meaningful and semantically accessible.
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+
+You can make your website more convenient by adding ARIA Icons, adding contrasting colors, using a large font,
+large buttons, or responsive images to make aspects of the site easy to view.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+A variable is a data container or a "box" where you can store your information.
+That container can hold numbers, strings, booleans, and other values.
+Furthermore, a variable can be re-assigned or changed. You can also perform operations with that variable.
+
 4. What is the purpose of using functions in code?
+
+The purpose of using functions in code is to ensure that your code stays D-R-Y (do-not-repeat-yourself).
+Functions allow you to create a repeating statement that will perform an action you make or using one or more methods to manipulate data.
+Functions allow you to break up your code into steps to allow for the program to run more efficiently and easier to debug if you run into any issues.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
