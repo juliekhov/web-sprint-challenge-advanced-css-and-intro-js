@@ -367,36 +367,32 @@ function getHTML( /* Code here */ ) {
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize( /* Code here */ ) {
+//             0    1  2   3     0   1             0   1   2   3
+// let shadowData = [   ,   , 12, 31] [12, 31] // data = [10, 15, 12, 31]
+// randomData = [15, 10, 31, 12]
 
-    /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns the same array in a randomized order. */
+// data array
+let data = [10, 15, 12, 31];
 
-    //             0    1  2   3     0   1             0   1   2   3
-    // let shadowData = [   ,   , 12, 31] [12, 31] // data = [10, 15, 12, 31]
-    // randomData = [15, 10, 31, 12]
-
-    // data array
-    let data = [10, 15, 12, 31];
-
-    function randomize(data) {
-        // what is in the data array?
-        console.log(data);
-        // need a copy of the array to keep track of which indices have already been used
-        let shadowData = data.slice(0);
-        // for-in loop to choose a random number in place of each current position/index
-        for (let i in data) {
-            // choose a random and whole number between 0 and the last index of the array
-            let index = Math.round(Math.random() * (shadowData.length - 1));
-            console.log(index);
-            // one way: store a randomly chosen index in the data[i] element, as opposed to the currently stored value
-            data[i] = shadowData[index];
-            // after using element in this index, must splice it out of shadowData array, as to not use it again
-            shadowData.splice(index, 1);
-        }
-        // return data array
-        return data;
+function randomize(data) {
+    // what is in the data array?
+    console.log(data);
+    // need a copy of the array to keep track of which indices have already been used
+    let shadowData = data.slice(0);
+    // for-in loop to choose a random number in place of each current position/index
+    for (let i in data) {
+        // choose a random and whole number between 0 and the last index of the array
+        let index = Math.round(Math.random() * (shadowData.length - 1));
+        console.log(index);
+        // one way: store a randomly chosen index in the data[i] element, as opposed to the currently stored value
+        data[i] = shadowData[index];
+        // after using element in this index, must splice it out of shadowData array, as to not use it again
+        shadowData.splice(index, 1);
     }
-    // console.log(randomize(data));
+    // return data array
+    return data;
+}
+// console.log(randomize(data));
 
 
-    /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+/* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
